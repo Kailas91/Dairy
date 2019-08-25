@@ -1,0 +1,30 @@
+@CHARSET "UTF-8";
+table, th, td {
+	padding: 30px;
+	vertical-align: top;
+	align:center;
+	
+}
+thead, tbody { display: block; }
+
+tbody {
+    height: 350px;       /* Just for the demo          */
+    width:400px;
+    overflow-y: auto;    /* Trigger vertical scroll    */
+    overflow-x: hidden;  /* Hide the horizontal scroll */
+}
+
+.btn {
+	padding: 10px 15px;
+	cursor: pointer;
+	color: Black;
+	margin-left : 100px;
+	margin-right : 100px;
+	border: none;
+}
+
+.file {
+	text-align: left;
+	align: center;
+
+}
