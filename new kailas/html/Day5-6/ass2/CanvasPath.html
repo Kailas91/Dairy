@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+Day : 5-6
+Assignment :2
+Assignment : Write a HTML in order to achieve following things with the help of Canvas
+              (Each pattern in separate HTML Files)
+Author : Kailas
+Date   : 6/8/2019
+-->
+<html>
+<body>
+  <br><br><br><br><br><br><br>
+<center>
+    <h4>HTML5 Canvas Paths</h4>
+    <canvas id="myCanvas" width="250" height="250">
+
+</canvas>
+</center>
+
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx=canvas.getContext("2d");
+
+/*create head using canvas arc */
+ctx.beginPath();
+// ploting arc
+ctx.arc(150,150,65,0,5*Math.PI);
+// drow arc
+ctx.stroke();
+
+/* drow 1st eye */
+ctx.beginPath();
+// ploting arc
+ctx.arc(130,130,7,0,6*Math.PI)
+// drow arc
+ctx.stroke();
+
+/* drow 2st eye */
+ctx.beginPath();
+// ploting arc
+ctx.arc(170,130,7,0,5*Math.PI)
+// drow arc
+ctx.stroke();
+
+/* create mouth of the face using half arc in canvas */
+ctx.beginPath();
+// ploting arc
+ctx.arc(150,150, 40,0,Math.PI);
+// drow arc
+ctx.stroke();
+</script>
+
+</body>
+</html>

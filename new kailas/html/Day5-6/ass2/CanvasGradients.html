@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+Day : 5-6
+Assignment :2
+Assignment : Write a HTML in order to achieve following things with the help of Canvas
+              (Each pattern in separate HTML Files)
+Author : Kailas
+Date   : 6/8/2019
+-->
+<html>
+<body>
+    <br><br><br><br><br><br><br>
+<center>
+    <h4>HTML5 Canvas Gradient</h4>
+    <canvas id="myCanvas" width="270" height="270">
+        </canvas>
+</center>
+
+<script>
+var getcanvas = document.getElementById("myCanvas");
+var can = getcanvas.getContext("2d");
+// Create gradient
+var grd = can.createLinearGradient(0,0,0,300);
+grd.addColorStop(0,"#98defa");
+grd.addColorStop(0.5,"white");
+grd.addColorStop(0.5,"#34d95e");
+grd.addColorStop(0.9,"#fafafa");
+
+// Fill with gradient rectangle
+can.fillStyle = grd;
+can.fillRect(25,25,250,250);
+
+// drow path on rectangle
+can.beginPath();
+can.moveTo(100, 100);
+can.lineTo(100, 180);
+can.stroke();
+  can.beginPath();
+  can.moveTo(100, 100);
+  can.lineTo(180, 100);
+  can.stroke();
+  can.beginPath();
+  can.moveTo(180, 100);
+  can.lineTo(180, 180);
+  can.stroke();
+</script>
+</body>
+</html>

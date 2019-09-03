@@ -1,0 +1,44 @@
+textarea {
+    resize: none;
+}
+legend{
+	font-size : 16px;
+	background-color : #9b9e9c;
+	color: white;
+	width : 98%;
+	padding : 5px;
+}
+label{
+	font-family : Times New Romon;
+	color : 330099;
+
+}
+ul
+  {
+      font-size:10pt;
+      height:100px;
+      width: 80px;
+      border:1px solid;
+
+  }
+
+input[type=submit] {
+    float: left;
+    margin-left: 150px;
+    margin-top: 10px;
+    width:60px;
+    height: 25px;
+    background-color : green;
+    color: white;
+
+}
+input[type=button] {
+    float: right;
+    margin-right: 150px;
+    margin-top: 10px;
+    width: 60px;
+    height:25px;
+    background-color : green;
+    color: white;
+
+}

@@ -1,0 +1,47 @@
+<style>
+	.outerDiv
+	{
+		background-color: #006699;
+		color: #fff;
+		height: 800px;
+		width: 380px;
+		margin: 0px auto;
+		padding: 5px;
+	}
+	header{
+	 text-align: center;
+	 padding: 05px;
+	 text-align: center;
+	 background: #1abc9c;
+	 color: white;
+	 font-size: 20px;
+	}
+	table, th, td
+	{
+
+	border-collapse: collapse;
+	}
+	th, td {
+	padding: 5px;
+	}
+	p.ex {
+margin-right=50em
+
+}
+
+
+#rcorners1 {
+  border-radius: 25px;
+  border: 2px solid #f0f5f5;
+  padding: 20px;
+  width: 400px;
+  height: 250px;
+}
+label {
+  color: white;
+  padding: 8px;
+}
+body{
+    background: linear-gradient(to bottom, #666699 0%, #666699 100%);
+}
+</style>

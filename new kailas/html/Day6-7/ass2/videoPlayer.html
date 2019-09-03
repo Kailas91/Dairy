@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+Day : 6-7
+Assignment :2
+Assignment : Write a HTML page which shows Video Player without any video controls.
+Author : Kailas
+Date   : 7/8/2019
+-->
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+<center>
+  <h4>HTML5 Video Player</h4>
+  <button id="vidbutton"class="button">Play/Pause</button>
+  <button class="button button2"onclick="makeBig()"type="button">Big</button>
+  <button class="button button3"onclick="makeSmall()" type="button">Small</button>
+  <button class="button button4"onclick="makeNormal()" type="button">Normal</button>
+  <br><br>
+  <video id="myvid" width="520">
+    <source src="video.mp4" type="video/mp4">
+  </video>
+</center>
+
+<script>
+var ppbutton = document.getElementById("vidbutton");
+ppbutton.addEventListener("click", playPause);
+myVideo = document.getElementById("myvid");
+function playPause() {
+    if (myVideo.paused) {
+        myVideo.play();
+        ppbutton.innerHTML = "Pause";
+        }
+    else  {
+        myVideo.pause();
+        ppbutton.innerHTML = "Play";
+        }
+}
+function makeBig() {
+      myvid.width = 1000;
+   }
+
+   function makeSmall() {
+       myvid.width = 320;
+   }
+
+   function makeNormal() {
+       myvid.width = 520;
+   }
+function openFullscreen() {
+  if (myVideo.requestFullscreen) {
+    myVideo.requestFullscreen();
+  } else if (myVideo.mozRequestFullScreen) { /* Firefox */
+    myVideo.mozRequestFullScreen();
+  } else if (myVideo.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+    myVideo.webkitRequestFullscreen();
+  } else if (myVideo.msRequestFullscreen) { /* IE/Edge */
+    myVideo.msRequestFullscreen();
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<style>
+	.outerDiv
+	{
+		background-color: #006699;
+		color: #fff;
+		height: 800px;
+		width: 600px;
+		margin: 0px auto;
+		padding: 5px;
+	}
+	.leftDiv
+	{
+		background-color: #efefef;
+		color: #000;
+		height: 800px;
+		width: 48%;
+		float: left;
+	}
+	.rightDiv
+	{
+		background-color: #9933FF;
+		color: #000;
+		height: 800px;
+		width: 48%;
+		float: right;
+	}
+	header{
+	 text-align: center;
+	 padding: 05px;
+	 text-align: center;
+	 background: #1abc9c;
+	 color: white;
+	 font-size: 20px;
+	}
+	table, th, td
+	{
+
+	border-collapse: collapse;
+	}
+	th, td {
+	padding: 10px;
+	}
+	p.ex {
+margin-right=50em
+
+}
+#loginid  {
+    border-radius: 25px;
+    border: 1.5px solid #609;
+    padding: 10px;
+    width: 200px;
+    height: 15px;
+}
+#password  {
+    border-radius: 25px;
+    border: 1.5px solid #609;
+    padding: 10px;
+    width: 200px;
+    height: 15px;
+}
+#submit{
+	border-radius: 25px;
+	border: 1.5px solid #f0f5f5;
+	padding: 10px;
+	width: 100px;
+	height: 30px;
+}
+#clear{
+	border-radius: 25px;
+	border: 1.5px solid #f0f5f5;
+	padding: 10px;
+	width: 100px;
+	height: 30px;
+}
+#rcorners1 {
+  border-radius: 25px;
+  border: 2px solid #f0f5f5;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+}
+label {
+  color: white;
+  padding: 8px;
+}
+</style>

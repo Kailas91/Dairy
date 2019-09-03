@@ -1,0 +1,131 @@
+
+<!--
+Day : 6-7
+Assignment :3
+Assignment : Update Day-3 Assignment as per HTML5 components with Proper Form Validation
+Author : Kailas
+Date   : 8/8/2019
+-->
+<html>
+<head>
+<script type="text/javascript" src="validate.js"></script>
+<link rel="stylesheet" type="text/css" href="userscss.css">
+
+</head>
+
+<body bgcolor=white>
+	<form name="StudentRegistration" onsubmit="return(validate());">
+		<table  style="border:1px solid black"cellpadding="1"width="40%" bgcolor="white" align="center"
+			cellspacing="15px">
+
+			<tr>
+				<td style="border:1px solid black"colspan=2><legend align="left">Personal Details</legend></td>
+			</tr>
+
+			<tr>
+				<td><label>Salutation :</label></td>
+				<td>
+					<input list="sal" id="sal1"style="width:200px" height="10px"autofocus>
+      			<datalist style="width:40px"id="sal">
+						<option value="Mr">Mr</option>
+						<option value="Miss">Miss</option>
+						<option value="Dr">Dr</option>
+				</datalist><br></td>
+			</tr>
+
+
+			<tr>
+				<td><label>First Name <span style="color: red;">*</span></label></td>
+				<td><input type=text name="firstname"style="width:200px" id="firstname" size="20"
+					pattern="[A-Za-z]{1,50]"required
+					placeholder="Enter first name"maxlength="50"></td>
+			</tr>
+
+			<tr>
+				<td><label>Middle Initial</label></td>
+				<td><input style="width:200px"type="text" name="middlename" id="middlename"
+					pattern="[A-Za-z]{1,50]" required
+						placeholder="Enter middle name initial" size="20" maxlength="1"></td>
+			</tr>
+
+			<tr>
+				<td><label>Last Name <span style="color: red;">*</span></label></td>
+				<td><input style="width:200px"type="text" name="lastname" id="lastname" size="20"
+					pattern="[a-zA-Z]{1,50]" required
+					 placeholder="Enter last name"maxlength="50"></td>
+			</tr>
+
+			<tr>
+				<td><label>Sex <span style="color: red;">*</span></label></td>
+				<td><input type="radio" name="sex" id="myRadio"value="male" size="10"required><label>Male</label>
+					<input type="radio" id="myRadio"name="sex" value="Female" size="10"required><label>Female</label></td>
+			</tr>
+			<p id="demo"></p>
+
+			<tr>
+				<td><label>Email Id <span style="color: red;">*</span></label></td>
+				<td><input style="width:200px"type="text" name="emailid" id="emailid" size="20"placeholder="e.g. xyz@gmail.com" ></td>
+			</tr>
+
+
+			<tr>
+				<td><label> Birth Date <span style="color: red;">*</span></label></td>
+				<td>
+					<input style="width:200px"type="date" id="date"required><br/>
+      <span id="errorday"></span>
+				</td>
+			</tr>
+
+			<tr>
+				<td><label>Address</label></td>
+				<td><textarea style="width:200px""resize: none" rows="4" cols="20"
+						name="Address" id="Address" maxlength="50">
+	</textarea></td>
+			</tr>
+			<tr>
+				<td style="border:1px solid black"colspan=2><legend>
+						Area Of Interest <span style="color: red;">*</span>
+					</legend></td>
+			</tr>
+
+			<tr>
+				<td colspan=2><input type="checkbox" name="web" id="web"
+					value="web"><label>Web Programming</label><br>
+					<input type="checkbox" name="database" id="database" value="database"><label>Database Programming</label><br>
+						<input type="checkbox" name="swing"id="swing" value="swing"><label>Swing Programming</label><br>
+					<input type="checkbox" name="mobile" id="mobile" value="mobile"><label>Mobile
+						Programming</label></td>
+			</tr>
+
+
+			<tr>
+				<td style="border:1px solid black"colspan=2><label>Other Interest</label></td>
+			</tr>
+
+			<tr>
+				<td>
+		       <ul ondrop="drop(event)" align="top" ondragover="allowDrop(event)" id="drop" style="background-color:gainsboro;list-style-type:none;overflow-y: scroll;">
+		         <li draggable="true" ondragstart="drag(event)"  ondragover="allowDrop(event)" id="drag">c</li>
+		         <li draggable="true" ondragstart="drag(event)"  ondragover="allowDrop(event)" id="drag1">c++</li>
+		         <li draggable="true" ondragstart="drag(event)"  ondragover="allowDrop(event)" id="drag2">Java</li>
+		         <li draggable="true" ondragstart="drag(event)"  ondragover="allowDrop(event)" id="drag3">Ruby</li>
+		         <li draggable="true" ondragstart="drag(event)"  ondragover="allowDrop(event)" id="drag4">Rails</li>
+		         <li>&nbsp;</li>
+		       </ul>
+		     </td>
+		     <td align="top">
+		       <ul ondrop="drop(event)" align="top" ondragover="allowDrop(event)" id="drop1" style="background-color:gainsboro;list-style-type:none;overflow-y: scroll;">
+		         <li>&nbsp;</li>
+		       </ul>
+		     </td>
+			</tr>
+			<tr>
+				<td colspan=2><center>
+						<input type="submit" value="Submit"><input type="button"
+							name="clear" value="Clear" onclick="this.form.reset()"">
+					</center></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

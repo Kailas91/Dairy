@@ -1,0 +1,8 @@
+1,Kailas Landge,Aurangabad,India,500000,9673970569
+2,priyesh XYZ, Ahemadabad, Gujarat,50000,9889988989
+3,amit ABC,Washingaton DC,USA,45000,9889123456
+4,rajan DEF, White Field,Bangalore,55000,9875654321
+5,John Cena,New York,USA,10000000,1234567890
+6,Alex George,Melbourne,Australia,500000,6542136589
+7,naved LMN,Worli,Mumbai,12000,1234567890
+8,Varad Paralikar,cidco,Aurangabad,35000,9545183116

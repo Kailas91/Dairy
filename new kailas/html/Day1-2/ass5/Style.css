@@ -1,0 +1,12 @@
+<style>
+p{
+  color:red;
+  font-family:courier;
+}
+body{
+    background-color:yellow;
+}
+th, td {
+    padding: 15px;
+}
+</style>

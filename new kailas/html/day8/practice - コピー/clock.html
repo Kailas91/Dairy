@@ -1,0 +1,55 @@
+<!DOCTYPE html utf-8>
+<html>
+  <head>
+    <title>Timer</title>
+    <link rel="stylesheet" type="text/css" href="clock.css">
+   </head>
+  <body bgcolor="#0099cc">
+    <br><br><br><br><br><br><br><br>
+    <center>
+      <div id="main">
+    <h3>Time : <output id="count"></output></h3>
+    <button class="button"onclick="startWorker()">Start Timer</button>
+    <button class="button button2"onclick="stopCounter()">Stop Timer</button>
+  </div>
+  </center>
+      </body>
+    <script>
+      var w;
+      function startWorker(){
+        /* check worker is supported or not in your browser*/
+        if(typeof(Worker !== "undefined"))
+        {
+          /* check existance of  an worker*/
+          if(typeof(w)=="undefined")
+          {
+            /* create object of worker with loading file*/
+            //timedCount();
+            w = new Worker("demo_workers.js");
+          }
+          /* print message is occusrs from clockWorker.js*/
+          w.onmessage = function(event){
+            /*set value of returned data to output tag*/
+            document.getElementById("count").innerHTML = event.data;
+          };
+        }
+        else{
+
+          document.getElementById("count").innerHTML = "Web Worker not supported in Your browser";
+        }
+      }
+      function stopCounter(){
+        if(typeof(w) !== "undefined")
+          {
+            /* terminate the webWorker*/
+            w.terminate();
+            /* set WebWorker to Undifined*/
+            w = undefined;
+            /* reset value of counter*/
+             document.getElementById("count").innerHTML= "0";
+          }
+      }
+
+    </script>
+
+</html>

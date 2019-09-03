@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+Day : 5-6
+Assignment :2
+Assignment : Write a HTML in order to achieve following things with the help of Canvas
+              (Each pattern in separate HTML Files)
+Author : Kailas
+Date   : 6/8/2019
+-->
+<html>
+<body>
+    <br><br><br><br><br><br><br>
+<center>
+    <h4>HTML5 Canvas Rectangle</h4>
+    <canvas id="myCanvas" width="250" height="250" >
+
+    </canvas>
+</center>
+
+    <script type="text/javascript">
+    var getcanvas = document.getElementById('myCanvas');
+    if (getcanvas.getContext) {
+      /* create object of canvas*/
+      var can = getcanvas.getContext('2d');
+      /* create fill rectangle*/
+      can.fillRect(5, 5, 300, 300);
+      /*Create  inner fill rectangle*/
+      can.clearRect(45, 45, 160, 160);
+      /* create inner rectangle*/
+      can.strokeRect(60, 60, 130, 130);
+    }
+    </script>
+</body>
+</html>

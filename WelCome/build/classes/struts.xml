@@ -5,8 +5,8 @@
 <struts>
 	<package name="default" extends="struts-default">
 		<action name="Welcome" class="com.uks.kailas.day1.action.WelcomeAction">
-			<result name="success">/welcomeUser.jsp</result>
-			<result name="error">/index.jsp</result>
+			<result name="SUCCESS">/welcomeUser.jsp</result>
+			<result name="ERROR">/index.jsp</result>
 		</action>
 	</package>
 </struts>

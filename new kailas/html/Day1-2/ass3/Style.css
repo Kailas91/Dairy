@@ -1,0 +1,20 @@
+<style>
+p{
+
+  font-family:courier;
+}
+p.ex{
+
+  margin-right=50em
+}
+body{
+    background-color:pink;
+}
+table {
+
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+}
+</style>
