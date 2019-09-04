@@ -31,7 +31,11 @@ public class FetchUserDataAction {
 		Statement stmt = con.createStatement();
 		ResultSet rs = stmt.executeQuery("SELECT * FROM userdetails where userid = '"
 				+ objbean.getUsername() + "' and password ='" + objbean.getPassword() + "'");
+<<<<<<< HEAD
 		objbean.setCategory(objbean.getUsername());
+=======
+
+>>>>>>> 6d909fdd434d8d32e1476833688a79634a105f57
 		while (rs.next()) {
 		//objuser = new UserDataBean();
 

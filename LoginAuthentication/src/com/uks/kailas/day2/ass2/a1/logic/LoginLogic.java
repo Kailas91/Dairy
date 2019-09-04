@@ -60,7 +60,11 @@ public class LoginLogic {
 				return objbean.getCategory();
 			}
 			else{
+<<<<<<< HEAD
 				return "LOGIN";
+=======
+				return Constants.ERR;
+>>>>>>> 6d909fdd434d8d32e1476833688a79634a105f57
 			}
 
 		} catch (Exception e) {

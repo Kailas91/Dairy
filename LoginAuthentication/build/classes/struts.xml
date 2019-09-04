@@ -7,7 +7,10 @@
 	<package name="default" extends="struts-default">
 		<action name="login" class="com.uks.kailas.day2.ass2.a1.action.LoginAction">
 			<result name="SUCCESS">/day2/success.jsp</result>
+<<<<<<< HEAD
 				<result name="LOGIN">/day2/Login.jsp</result>
+=======
+>>>>>>> 6d909fdd434d8d32e1476833688a79634a105f57
 			<result name="login">/day2/Login.jsp</result>
 			<result name="ERROR">/day2/error.jsp</result>
 			<result name="allUser">/day2/error.jsp</result>
@@ -15,8 +18,13 @@
 		</action>
 		 <action name="logout" class="com.uks.kailas.day2.ass2.a1.action.LoginAction"
                 method="logout">
+<<<<<<< HEAD
             <result name="LOGOUT">/day2/Login.jsp</result>
         </action>
    
+=======
+            <result name="SUCCESS">/day2/Login.jsp</result>
+        </action>
+>>>>>>> 6d909fdd434d8d32e1476833688a79634a105f57
 	</package>
 </struts>

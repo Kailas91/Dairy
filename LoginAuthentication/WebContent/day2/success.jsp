@@ -167,7 +167,11 @@ function myFunction() {
 			<center>
 		<h3>
 
+<<<<<<< HEAD
 <a href="logout">Logout</a>
+=======
+		<button onclick="myFunction()">Logout</button>
+>>>>>>> 6d909fdd434d8d32e1476833688a79634a105f57
 	</h3>
 	</center>
 	</div>
