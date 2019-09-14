@@ -1,8 +1,0 @@
-1,kailas,kailas,admin
-2,priyesh,priyesh,employee
-3,amit,amit,employee
-4,rajan,rajan,admin
-5,john,john,manager
-6,alex,alex,manager
-7,naved,naved,admin
-8,varad,varad,employee

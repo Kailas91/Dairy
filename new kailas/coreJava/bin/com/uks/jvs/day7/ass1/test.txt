@@ -1,5 +1,0 @@
-Int
-Float
-Double
-Long
-Character
