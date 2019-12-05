@@ -1,0 +1,9 @@
+https://github.com/hellokoding/hellokoding-courses/tree/master/spring-mvc-examples
+https://www.onlinetutorialspoint.com/spring/spring-hibernate-example.html
+https://www.tutorialspoint.com/springmvc/springmvc_hibernate_validator.htm
+https://www.dineshonjava.com/spring-mvc-with-hibernate-crud-example/
+http://javawebtutor.com/articles/spring/spring-mvc-hibernate-crud-example.php
+http://websystique.com/springmvc/spring-4-mvc-and-hibernate4-integration-example-using-annotations/
+https://www.javacodegeeks.com/2013/04/spring-mvc-hibernate-maven-crud-operations-example.html
+http://javainsimpleway.com/spring-mvc-with-hibernate-crud-example/
+https://java2blog.com/spring-mvc-hibernate-mysql-crud-example/
